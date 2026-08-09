@@ -1,6 +1,6 @@
 ## 🌐 Live Demo
 
-[Visit NagarRakshak](transcendent-crostata-090ee6.netlify.app)
+[Visit NagarRakshak](https://transcendent-crostata-090ee6.netlify.app)
 
 # 🏙️ NagarRakshak – Multilingual Civic Response Platform
 
