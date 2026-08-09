@@ -1,0 +1,12 @@
+{
+  "name": "NagarRakshak - Multilingual Civic Response Platform",
+  "description": "Multilingual civic-response platform for Ludhiana that turns citizen reports on waterlogging, garbage, potholes, and open manholes into verified, priority-ranked civic action.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "NR-LDH-2048",
+    "category": "open_manhole",
+    "title": "Uncovered Deep Sewer Manhole near BCM School Gate",
+    "description": "Deep open sewer cover missing right where primary school children walk. Water accumulated around it.",
+    "language": "en",
+    "imageUrl": "https://images.unsplash.com/photo-1584467735871-8e85353a8413?auto=format&fit=crop&w=800&q=80",
+    "latitude": 30.8923,
+    "longitude": 75.8214,
+    "locationName": "Sarabha Nagar (Kipper Market & BCM School)",
+    "wardNumber": "Ward 58, Zone D",
+    "landmark": "Opposite BCM School Gate 2",
+    "severity": "critical",
+    "publicRiskScore": 10,
+    "locationSensitivityScore": 9,
+    "affectedPopulationEst": 3200,
+    "status": "reported",
+    "mcSeen": false,
+    "workStarted": false,
+    "affectedCount": 1,
+    "duplicateCount": 0,
+    "priorityScore": 96,
+    "createdAt": "2026-08-09T10:47:38.585Z",
+    "updatedAt": "2026-08-09T10:47:38.585Z",
+    "aiAnalysis": {
+      "detectedIssue": "Open Sewer Cover in School Route",
+      "category": "open_manhole",
+      "confidence": 0.98,
+      "suggestedSeverity": "critical",
+      "severityReasoning": "Immediate safety hazard for school pedestrians in monsoon.",
+      "hazardsDetected": [
+        "Submerged open hole",
+        "Child safety hazard",
+        "Accident risk"
+      ],
+      "summaryOfficial": "CRITICAL HAZARD: Open manhole missing iron cover adjacent to school entrance.",
+      "aiTags": [
+        "School Zone",
+        "Missing Cover",
+        "Life Threat"
+      ],
+      "publicRiskScore": 10,
+      "locationSensitivityScore": 9,
+      "estimatedAffectedPopulation": 3200
+    },
+    "timeline": [
+      {
+        "id": "t1",
+        "status": "reported",
+        "comment": "Complaint registered by citizen with photo evidence.",
+        "timestamp": "2026-08-09T10:47:38.585Z",
+        "actor": "Citizen (Harmandeep Singh)"
+      }
+    ]
+  }
+]
