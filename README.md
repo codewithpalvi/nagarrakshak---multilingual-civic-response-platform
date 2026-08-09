@@ -1,3 +1,7 @@
+## 🌐 Live Demo
+
+[Visit NagarRakshak](transcendent-crostata-090ee6.netlify.app)
+
 # 🏙️ NagarRakshak – Multilingual Civic Response Platform
 
 NagarRakshak is a multilingual civic response platform designed to make it easier for citizens to report local civic issues and for authorities to efficiently monitor, manage, and respond to those reports.
