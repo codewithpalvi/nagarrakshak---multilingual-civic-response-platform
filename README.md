@@ -1,44 +1,84 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# 🏙️ NagarRakshak – Multilingual Civic Response Platform
 
-# Run and deploy your AI Studio app
+NagarRakshak is a multilingual civic response platform designed to make it easier for citizens to report local civic issues and for authorities to efficiently monitor, manage, and respond to those reports.
 
-This contains everything you need to run your app locally.
+The platform focuses on accessibility by providing support for **English, Hindi, and Punjabi**, allowing users to interact with the system in a language they are comfortable with.
 
-View your app in AI Studio: https://ai.studio/apps/6de3747a-d6f3-402f-bca6-08f139fb6d38
+---
 
-## Run Locally
+## 📌 Project Overview
 
-**Prerequisites:**  Node.js
+Civic issues such as damaged roads, garbage accumulation, water-related problems, streetlight failures, and other public infrastructure concerns often require an efficient system for reporting and follow-up.
 
+**NagarRakshak** provides a centralized digital platform where civic issues can be reported, tracked, and managed.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+The goal is to improve communication between citizens and responsible authorities while making civic issue reporting more accessible through multilingual support.
 
-Persistence note (SQLite-backed storage):
+---
 
-- The server now uses a local SQLite database file `reports.db` in the project root to persist user-submitted complaints. This makes reports survive restarts and is more reliable than a single JSON file.
-- Install the native dependency before running: `npm install` (this will install `better-sqlite3`). On some systems building the native addon requires Python and build tools (see better-sqlite3 docs if install fails).
-- To reset stored complaints: stop the server, delete `reports.db`, and restart the app.
+## ✨ Key Features
 
-Admin & Auth:
+### 🌐 Multilingual Interface
+- English language support
+- Hindi language support
+- Punjabi language support
+- Consistent translation across the application interface
 
-- ADMIN_TOKEN: set an environment variable ADMIN_TOKEN for a simple admin bearer token used by admin endpoints (or authenticate with a JWT that has isAdmin: true). If not set, a default dev token 'admin-token-dev' is used (change for production).
-- JWT_SECRET: set JWT_SECRET to a strong secret for user tokens. If absent a dev secret is used.
+### 📝 Civic Issue Reporting
+- Report local civic problems through the platform
+- Provide relevant information about the reported issue
+- Organize reports for easier management
 
-Available admin endpoints (require admin bearer token):
-- GET  /api/admin/export       -> export all reports as JSON
-- POST /api/admin/import       -> import reports JSON { reports: [...], replace: true }
-- POST /api/admin/backup       -> create a timestamped DB backup in backups/ and return filename
-- POST /api/admin/vacuum       -> run SQLite VACUUM to compact the DB
+### 📊 Issue Management
+- View and monitor submitted civic reports
+- Track the status of reported issues
+- Manage issues through a centralized interface
 
-Auth endpoints:
-- POST /api/auth/register { name, email, password } -> returns { id, name, email, token }
-- POST /api/auth/login    { email, password } -> returns { id, name, email, token }
+### 👥 User-Friendly Interface
+- Clean and responsive UI
+- Simple navigation
+- Designed for accessibility and ease of use
 
-- Submitters who authenticate with the returned token will have their citizenId and citizenName attached to created reports automatically.
+### 🔎 Issue Tracking
+- Keep track of reported problems
+- Monitor progress and status
+- Improve transparency in civic issue handling
 
+---
+
+## 🛠️ Technology Stack
+
+| Technology | Purpose |
+|------------|---------|
+| **React** | Frontend user interface |
+| **TypeScript** | Type-safe application development |
+| **Vite** | Development server and build tool |
+| **Node.js** | JavaScript runtime and project environment |
+| **npm** | Package and dependency management |
+| **Git** | Version control |
+| **GitHub** | Source code management and collaboration |
+
+---
+
+## 🏗️ Project Structure
+
+```text
+nagarrakshak---multilingual-civic-response-platform/
+│
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── ...
+│
+├── public/
+│
+├── index.html
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+├── vite.config.ts
+├── metadata.json
+├── .gitignore
+├── .env.example
+└── README.md
